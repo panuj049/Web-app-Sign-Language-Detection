@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sign Language Detection</h1>
+        </header>
+        <main>
+            <div class="video-container">
+                <img src="{{ url_for('video_feed') }}" alt="Sign Language Detection Video Feed" id="videoFeed" />
+            </div>
+            <div class="buttons">
+                <button id="startBtn">Start Capturing</button>
+                <button id="stopBtn">Stop Capturing</button>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Sign Language Detection Project</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('startBtn').addEventListener('click', () => {
+            fetch('/start_capture', { method: 'POST' });
+        });
+
+        document.getElementById('stopBtn').addEventListener('click', () => {
+            fetch('/stop_capture', { method: 'POST' })
+                .then(() => window.location.href = '{{ url_for("thankyou") }}');
+        });
+    </script>
+</body>
+</html>

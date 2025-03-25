@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Sign Language Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Thank You for Using Our App</h1>
+        </header>
+        <main>
+            <p>Thank you for using our Sign Detection App. Our project aims to bridge the communication gap between the deaf and hearing communities by leveraging advanced machine learning algorithms to recognize and interpret sign language gestures in real-time.</p>
+            <div class="buttons">
+                <a href="{{ url_for('index') }}"><button>Return to Home</button></a>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Sign Language Detection Project</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Sign Detection App</h1>
+        </header>
+        <main>
+            <img src="{{ url_for('static', filename='sign_language.jpg') }}" alt="Sign Language" style="width: 100%; border-radius: 10px;">
+            <p>Sign language is a visual language that uses hand shapes, facial expressions, gestures, and body language to communicate. It is a rich and expressive form of communication used by the deaf and hard-of-hearing community.</p>
+            <div class="buttons">
+                <a href="{{ url_for('capture') }}"><button>Start Camera</button></a>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Sign Language Detection Project</p>
+        </footer>
+    </div>
+</body>
+</html>

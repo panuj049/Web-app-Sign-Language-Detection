@@ -1,0 +1,89 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to bottom right, #66ccff, #cc99ff), url('static/pattern.png');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 20px;
+}
+
+header {
+    background-color: #000000;
+    color: #008080; /* Teal */
+    padding: 20px 0;
+    font-size: 1.8em; /* Increased font size */
+    font-weight: bold;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+main {
+    padding: 20px;
+    color: #000000; /* Black */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#videoFeed {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px; /* Curved edges */
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-radius 0.3s ease; /* Added transition */
+}
+
+button:hover {
+    background-color: #333333;
+    transform: scale(1.05);
+    border-radius: 30px; /* Increased border-radius on hover */
+}
+
+footer {
+    background-color: #000000;
+    color: #008080; /* Teal */
+    padding: 10px 0;
+    font-size: 0.8em; /* Reduced font size */
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
